@@ -112,6 +112,7 @@ nav a.active, nav a:hover{
     }
 }
 
+/* reusable features */
 /* quotations */
 .quote{
     width: 80%;
@@ -127,6 +128,30 @@ nav a.active, nav a:hover{
     font-size: 20px;
     line-height: 35px;
     color: #555555;
+}
+
+/* button styling (exclude footer) */
+.btn{
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.btn.var-1{
+    color: #EEEEEE;
+    background: #2F4858;
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.btn.var-1:hover{
+    background: #60B4B1;
 }
 
 /*normal rows*/
@@ -199,6 +224,7 @@ nav a.active, nav a:hover{
     color: #F7F7F7;
 }
 
+/* home page featured events (3) */
 .container {
     margin: 20px auto;
     display: grid;
@@ -258,31 +284,6 @@ nav a.active, nav a:hover{
     background-color: #F5F5F5;
 }
 
-/* button styling (exclude footer) */
-.btn{
-    height: 40px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: .2s;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-}
-
-
-.btn.var-1{
-    color: #EEEEEE;
-    background: #2F4858;
-    width: 200px;
-    display: block;
-    margin: auto;
-}
-
-.btn.var-1:hover{
-    background: #60B4B1;
-}
-
 
 .counter-container{
     margin: 20px auto;
@@ -311,6 +312,76 @@ nav a.active, nav a:hover{
     font-weight: 300;
 }
 
+.row.intro-cont{
+    background-color: #F5F5F5;
+}
+
+.row.intro-cont .description{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.row.intro-cont .description p{
+    color: #555555;
+    margin: auto;
+    padding-left: 50px;
+}
+
+.row.intro-cont img{
+    height: 250px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1024px){
+    .row.intro-cont .description{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row.intro-cont .description p{
+        padding-top: 30px;
+    }
+}
+
+/* 2023 meet the team */
+.exec-container{
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.member{
+    width: 250px;
+    height: 400px;
+    margin: auto;
+}
+
+.member img{
+    width: 100%;
+}
+
+.member .description{
+    width: 100%;
+}
+
+.member h4{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.member p{
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.row.testimonials{
+    background-color: #F5F5F5;
+}
 
 
 
