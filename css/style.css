@@ -148,6 +148,7 @@ nav a.active, nav a:hover{
     width: 200px;
     display: block;
     margin: auto;
+    font-weight: 600;
 }
 
 .btn.var-1:hover{
@@ -225,19 +226,20 @@ nav a.active, nav a:hover{
 }
 
 /* home page featured events (3) */
-.container {
+.events-container {
     margin: 20px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-columns: repeat(auto-fit, 320px);
     gap: 40px;
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
+    width: 80%;
 }
   
 .item {
     background-color: #F7F7F7;
-    width: 350px;
+    width: 320px;
     height: 500px;
     margin: auto;
 }
@@ -366,13 +368,19 @@ nav a.active, nav a:hover{
 }
 
 .member .description{
+    padding-top: 10px;
     width: 100%;
+}
+
+.member h3{
+    color: #555555;
 }
 
 .member h4{
     font-weight: 500;
     font-size: 14px;
 }
+
 
 .member p{
     font-weight: 200;
@@ -396,6 +404,15 @@ nav a.active, nav a:hover{
 
 .partner img{
     width: 100px;
+}
+
+/* $$ */
+.donations{
+    background-color: #F5F5F5;
+}  
+
+.donations p{
+    padding-bottom: 30px;
 }
 
 
