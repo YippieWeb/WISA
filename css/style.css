@@ -432,8 +432,8 @@ footer{
     width: 100%;
     font-size: 15px;
     padding: 10px;
-    color: #52622C;
-    font-family: 'Public Sans', sans-serif;
+    color: #2F4858;
+    font-family: 'Poppins', sans-serif;
  }
 
  .right form input{
@@ -442,7 +442,7 @@ footer{
   
  .right form input:focus,
  .right form textarea:focus{
-    outline-color: #52622C;
+    outline-color: #2F4858;
  }
   
  .right form .btn{
@@ -460,7 +460,7 @@ footer{
     font-size: 15px;
     font-weight: 600;
     color: white;
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
  }
   
  .right form .btn button:hover{
@@ -479,7 +479,7 @@ footer{
      line-height: 30px;
  }
 
- @media screen and (max-width: 992px){
+ @media screen and (max-width: 1024px){
     footer{
         position: relative;
         bottom: 0px;
