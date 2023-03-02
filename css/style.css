@@ -314,34 +314,45 @@ nav a.active, nav a:hover{
     font-weight: 300;
 }
 
-.row.intro-cont{
+.row.var-1{
     background-color: #F5F5F5;
 }
 
-.row.intro-cont .description{
+.row.var-1 .description{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
 }
 
-.row.intro-cont .description p{
+.row.var-1 .description .paragraph{
     color: #555555;
     margin: auto;
     padding-left: 50px;
 }
 
-.row.intro-cont img{
+.row.var-1 img{
     height: 250px;
     margin: auto;
 }
 
+.row.var-1 h5{
+    font-weight: 200;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 20px;
+}
+
+.row.var-1 .paragraph h2{
+    text-align: left;
+}
+
 @media screen and (max-width: 1024px){
-    .row.intro-cont .description{
+    .row.var-1.description{
         flex-direction: column;
         align-items: center;
     }
 
-    .row.intro-cont .description p{
+    .row.var-1 .description p{
         padding-top: 30px;
     }
 }
@@ -415,7 +426,19 @@ nav a.active, nav a:hover{
     padding-bottom: 30px;
 }
 
+/* events */
+.row .paragraph{
+    padding-bottom: 40px;
+}
 
+.row .paragraph h2{
+    line-height: 10px;
+}
+
+.row.upcoming-events p{
+    text-align: center;
+    color: #555555;
+}
 
 
 /* Footer */
