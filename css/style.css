@@ -176,7 +176,7 @@ nav a.active, nav a:hover{
 }
 
 .acronym .word button:hover{
-    color: #82DAC5;
+    color: #60B4B1;
 }
 
 .acronym h2{
@@ -196,9 +196,8 @@ nav a.active, nav a:hover{
 
 .row.mission{
     background-color: #F5F5F5;
-    color: #888888;
+    color: #F7F7F7;
 }
-
 
 .container {
     margin: 20px auto;
@@ -255,6 +254,9 @@ nav a.active, nav a:hover{
     padding-top: 10px;
 }
 
+.row.facts{
+    background-color: #F5F5F5;
+}
 
 /* button styling (exclude footer) */
 .btn{
@@ -272,9 +274,41 @@ nav a.active, nav a:hover{
 .btn.var-1{
     color: #EEEEEE;
     background: #2F4858;
-    width: 150px;
+    width: 200px;
     display: block;
     margin: auto;
+}
+
+.btn.var-1:hover{
+    background: #60B4B1;
+}
+
+
+.counter-container{
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.counter-box i{
+    font-size: 40px;
+    color: #60B4B1;
+}
+
+.counter-box h2{
+    font-size: 50px;
+    padding: 15px;
+}
+
+.counter-container h4{
+    font-size: 15px;
+    font-weight: 300;
 }
 
 
@@ -420,7 +454,7 @@ footer{
     width: 100%;
     border: none;
     outline: none;
-    background: #929D79;
+    background: #3B6A7A;
     cursor: pointer;
     transition: .2s;
     font-size: 15px;
@@ -430,7 +464,7 @@ footer{
  }
   
  .right form .btn button:hover{
-    background: #31391E;
+    background: #60B4B1;
  }
   
  .bottom center{
