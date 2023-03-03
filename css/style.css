@@ -440,6 +440,29 @@ nav a.active, nav a:hover{
     color: #555555;
 }
 
+/* resources */
+.row.resources .description h3{
+    color: #3B6A7A;
+    padding-top: 50px;
+}
+
+.row.resources .description p{
+    padding: 10px 0;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.row.resources .description a{
+    color: #888888;
+    font-size: 15px;
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+.row.resources .description a:hover{
+    color: #82DAC5;
+}
 
 /* Footer */
 footer{
