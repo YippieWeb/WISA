@@ -464,6 +464,88 @@ nav a.active, nav a:hover{
     color: #82DAC5;
 }
 
+
+/*accordion faq */
+.accordion{
+    padding: 40px 0;
+ }
+ .accordion__button{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+ 
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: transparent;
+    color: #555555;
+    text-align: left;
+    border-bottom: 2px solid #eee;
+    transition: background 0.2s;
+ }
+ 
+ .first{
+    border-top: 2px solid #eee;
+ }
+ 
+ .accordion__button::after{
+    content: '\002B'; /*a plus sign*/
+    float: right;
+    transform: scale(1.9);
+ }
+ 
+ .accordion__button--active + .accordion__content {display: block;}
+ .accordion__button--active {
+    background: transparent;
+    font-weight: 600;
+    border-bottom: transparent;
+ }
+ 
+ .accordion__button--active::after {
+    content: '\002D'; /*a minus sign*/
+    font-weight: 300;
+ } 
+ 
+ .accordion__content{
+    padding: 20px 15px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: #888888;
+    text-align: left;
+    border-bottom: 2px solid #eee;
+    display: none;
+    overflow: auto;
+ }
+
+ .accordion__content a{
+     color: #60B4B1;
+ }
+
+ .accordion__content a:hover{
+     color: #82DAC5;
+ }
+ 
+ .icon{
+    width: 55px;
+    height: 50px;  
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 5px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
 /* Footer */
 footer{
     padding-top: 30px;
