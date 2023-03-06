@@ -111,6 +111,11 @@ nav a.active, nav a:hover{
 }
 
 /* reusable features */
+/* banner */
+.banner img{
+    width: 100%;
+}
+
 /* quotations */
 .quote{
     width: 80%;
