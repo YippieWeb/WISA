@@ -130,6 +130,17 @@ nav a.active, nav a:hover{
     color: #555555;
 }
 
+@media screen and (max-width: 768px){
+    .quote{
+        width: 100%;
+    }
+
+    .quote p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
 /* button styling (exclude footer) */
 .btn{
     height: 40px;
@@ -188,6 +199,12 @@ nav a.active, nav a:hover{
     line-height: 35px;
 }
 
+@media screen and (max-width: 768px){
+    .row .description {
+        width: 100%;
+    }
+}
+
 /* news (posts) links */
 .row.posts .description a{
     font-size: 15px;
@@ -233,6 +250,18 @@ nav a.active, nav a:hover{
 
 .acronym p{
     font-weight: 200;
+}
+
+@media screen and (max-width: 480px){
+    .acronym h2{
+        font-size: 18px;
+    }
+
+    .acronym p{
+        font-size: 15px;
+        line-height: 30px;
+        padding-top: 10px;
+    }
 }
 
 .row.mission{
@@ -309,15 +338,16 @@ nav a.active, nav a:hover{
     padding-top: 10px;
 }
 
+
+/* quick facts */
 .row.facts{
     background-color: #F5F5F5;
 }
 
-
 .counter-container{
     margin: 20px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 250px);
+    grid-template-columns: repeat(auto-fit, 200px);
     gap: 20px;
     align-items: center;
     justify-content: center;
@@ -341,6 +371,30 @@ nav a.active, nav a:hover{
     font-weight: 300;
 }
 
+@media (max-width: 1024px) {
+    .row.facts{
+        padding: 50px 10px;
+    }
+
+    .counter-container{
+        grid-template-columns: repeat(auto-fit, 160px);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .row.facts{
+        padding: 50px 10px;
+    }
+
+    .counter-container{
+        grid-template-columns: repeat(auto-fit, 160px);
+        gap: 20px;
+    }
+}
+
+
+
 .row.var-1{
     background-color: #F5F5F5;
 }
@@ -348,7 +402,6 @@ nav a.active, nav a:hover{
 .row.var-1 .description{
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
 }
 
 .row.var-1 .description .paragraph{
@@ -374,14 +427,23 @@ nav a.active, nav a:hover{
 }
 
 @media screen and (max-width: 1024px){
-    .row.var-1.description{
+    .row.var-1 .description{
         flex-direction: column;
+        display: table;
         align-items: center;
     }
 
     .row.var-1 .description p{
         padding-top: 30px;
     }
+
+    .row.var-1 img{
+        width: 100%;
+        height: auto;
+    }
+
+    .row.var-1 .description .img { display: table-header-group; } /*image always on top*/
+    .row.var-1 .description .paragraph { display: table-footer-group; } /*paragraph always on bottom*/
 }
 
 /* 2023 meet the team */
@@ -429,24 +491,7 @@ nav a.active, nav a:hover{
     background-color: #F5F5F5;
 }
 
-/* testimonials */
-.slider-wrapper {
-    margin: 1rem;
-    position: relative;
-    overflow: hidden;
-}
-
-.slides-container {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: scroll;
-    scroll-behavior: smooth;
-}
-
+/* testimonials (not working)*/
 .slide {
     width: 100%;
     height: 100%;
@@ -454,7 +499,8 @@ nav a.active, nav a:hover{
 }
 
 .slide-content{
-    padding: 0 150px;   
+    width: 80%;
+    margin: auto;
 }
 
 .slide-content p{
@@ -480,46 +526,16 @@ nav a.active, nav a:hover{
     line-height: 30px;
 }
 
-.slides-container {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-}
-/* WebKit */
-.slides-container::-webkit-scrollbar { 
-    width: 0;
-    height: 0;
-}
+@media (max-width: 480px) {
+    .slide-content p{
+        font-size: 15px;
+        line-height: 30px;
+    }
 
-.slide-arrow {
-    position: absolute;
-    display: flex;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 4rem;
-    background-color: white;
-    border: none;
-    width: 2rem;
-    font-size: 3rem;
-    padding: 0;
-    cursor: pointer;
-    opacity: 0.5;
-    transition: opacity 100ms;
-  }
-  .slide-arrow:hover,
-  .slide-arrow:focus {
-    opacity: 1;
-  }
-  #slide-arrow-prev {
-    left: 0;
-    padding-left: 0.25rem;
-    border-radius: 0 2rem 2rem 0;
-  }
-  #slide-arrow-next {
-    right: 0;
-    padding-left: 0.75rem;
-    border-radius: 2rem 0 0 2rem;
-  }
+    .slide-content{
+        width: 90%;
+    }
+}
 
 
 
@@ -542,6 +558,33 @@ nav a.active, nav a:hover{
 .partner img{
     width: 100px;
 }
+
+@media (max-width: 768px) {
+    .row.partnerships{
+        padding: 50px 0;
+    }
+
+    .partners-container {
+        grid-template-columns: repeat(auto-fit, 80px);
+        gap: 20px;
+    }
+
+    .partner img{
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .partners-container {
+        grid-template-columns: repeat(auto-fit, 50px);
+        gap: 10px;
+    }
+
+    .partner img{
+        width: 50px;
+    }
+}
+
 
 /* $$ */
 .donations{
@@ -567,28 +610,40 @@ nav a.active, nav a:hover{
 }
 
 /* resources */
-.row.resources .description h3{
+.row.links .description h3{
     color: #3B6A7A;
     padding-top: 50px;
 }
 
-.row.resources .description p{
+.row.links .description p{
     padding: 10px 0;
     font-weight: 200;
     font-size: 15px;
     line-height: 30px;
 }
 
-.row.resources .description a{
+.row.links .description a{
     color: #888888;
     font-size: 15px;
     font-weight: 200;
     text-decoration: underline;
 }
 
-.row.resources .description a:hover{
+.row.links .description a:hover{
     color: #82DAC5;
 }
+
+@media screen and (max-width: 1024px){
+    .row.resources.var-1 h2, .row.events.var-1 h2{
+        padding: 20px 0;
+        line-height: 35px;
+    }
+
+    .row.resources.var-1 p, .row.events.var-1 p{
+        padding: 0;
+    }
+}
+
 
 
 /*accordion faq */
@@ -618,6 +673,7 @@ nav a.active, nav a:hover{
  
  .accordion__button::after{
     content: '\002B'; /*a plus sign*/
+    padding-left: 30px;
     float: right;
     transform: scale(1.9);
  }
@@ -632,6 +688,7 @@ nav a.active, nav a:hover{
  .accordion__button--active::after {
     content: '\002D'; /*a minus sign*/
     font-weight: 300;
+    padding-left: 30px;
  } 
  
  .accordion__content{
@@ -661,6 +718,31 @@ nav a.active, nav a:hover{
     padding-bottom: 5px;
  }
 
+ @media screen and (max-width: 768px){
+    .accordion__button{
+        font-size: 15px;
+    }
+
+    .accordion__content{
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+    .row.intro.faq{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+ }
+
+
+
+ /* applies to all p */
+ @media (max-width: 480px) {
+     .description p{
+         font-size: 15px;
+         line-height: 30px;
+     }
+ }
 
 
 
@@ -849,5 +931,12 @@ footer{
   
     .main-content .box{
         margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .bottom span{
+        font-size: 10px;
+        line-height: 20px;
     }
 }
