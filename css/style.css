@@ -489,25 +489,28 @@ nav a.active, nav a:hover{
     background-color: #F5F5F5;
 }
 
-/* testimonials (not working)*/
-.slide {
-    width: 100%;
-    height: 100%;
-    flex: 1 0 100%;
+/* testimonials */
+/* slideshow container */
+.slideshow-container {
+    position: relative;
 }
-
-.slide-content{
+  
+/* slides */
+.slide {
+    display: none;
+    padding: 20px 0;
     width: 80%;
     margin: auto;
-}
+    text-align: center;
+    }
 
-.slide-content p{
+.slide p{
     font-size: 18px;
     color: #888888;
     line-height: 40px;
 }
 
-.slide-content h3{
+.slide h3{
     text-transform: uppercase;
     text-align: center;
     color: #555555;
@@ -517,21 +520,89 @@ nav a.active, nav a:hover{
     padding-bottom: 20px;
 }
 
-.slide-content h4{
+.slide h4{
     font-weight: 200;
     text-align: center;
     font-size: 15px;
     line-height: 30px;
 }
 
+  
+/* next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* on hover, change color of buttons */
+.prev:hover, .next:hover {
+    color: #3B6A7A;
+}
+
+/* the bullet container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* the bullet indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* change color of dot when active */
+.dot.active, .dot:hover {
+    background-color: #3B6A7A;
+}
+
+@media (max-width: 768px) {
+    .slide{
+        width: 70%;
+    }
+}
+
 @media (max-width: 480px) {
-    .slide-content p{
-        font-size: 15px;
-        line-height: 30px;
+    .row.testimonials{
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
-    .slide-content{
-        width: 90%;
+    .slide p{
+        font-size: 15px;
+        line-height: 30px;
+        text-align: justify;
+    }
+
+    .slide h4{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .slide{
+        width: 70%;
     }
 }
 
@@ -899,7 +970,11 @@ footer{
 
  .bottom span a{
     text-decoration: underline;
-    color: #60B4B1;
+    color: #498E98;
+}
+
+.bottom span a:hover{
+    color: #82DAC5;
 }
 
  @media screen and (max-width: 1024px){
