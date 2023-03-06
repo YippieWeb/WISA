@@ -64,7 +64,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
 // Faster image loading
 function loadImage() {
     var img = document.getElementById('image');
@@ -77,4 +76,3 @@ function loadImage() {
       }
     }, 100);
   }
-  
