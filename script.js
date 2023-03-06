@@ -1,15 +1,15 @@
 // Pronunciations
 var whanaungatanga = new Audio();
-whanaungatanga.src = 'assets/audio/whanaungatanga.mp3';
+whanaungatanga.src = 'https://wisa-assets.s3.us-east-2.amazonaws.com/audio/whanaungatanga.mp3';
 
 var interaction = new Audio();
-interaction.src = 'assets/audio/interaction.mp3';
+interaction.src = 'https://wisa-assets.s3.us-east-2.amazonaws.com/audio/interaction.mp3';
 
 var support = new Audio();
-support.src = 'assets/audio/support.mp3';
+support.src = 'https://wisa-assets.s3.us-east-2.amazonaws.com/audio/support.mp3';
 
 var ako = new Audio();
-ako.src = 'assets/audio/ako.mp3';
+ako.src = 'https://wisa-assets.s3.us-east-2.amazonaws.com/audio/ako.mp3';
 
  
 // Animating counter up stats
@@ -23,15 +23,7 @@ ako.src = 'assets/audio/ako.mp3';
 // Accordion
 document.querySelectorAll('.accordion__button').forEach(button => {
     button.addEventListener('click', () => { 
-        // const accordionContent = button.nextElementSibling;
-
         button.classList.toggle('accordion__button--active');
-
-        // if (button.classList.contains('accordion__button--active')){
-        //    accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-        // } else {
-        //    accordionContent.style.maxHeight = 0;
-        //}
     });
 });
 
