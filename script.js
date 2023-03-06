@@ -66,6 +66,15 @@ function showSlides(n) {
 
 
 // Faster image loading
-// credit: https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/
-const observer = lozad();
-observer.observe();
+function loadImage() {
+    var img = document.getElementById('image');
+    img.style.opacity = 0;
+    var interval = setInterval(function() {
+      if (img.complete) {
+        clearInterval(interval);
+        img.style.transition = 'opacity 1s';
+        img.style.opacity = 1;
+      }
+    }, 100);
+  }
+  
