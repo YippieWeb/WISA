@@ -21,6 +21,10 @@ nav{
     height: 96px;
     width: 100%;
     padding: 0 80px;
+    position: fixed;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px 0px;
+    z-index: 1;
 }
 
 img.logo{
@@ -82,7 +86,7 @@ nav a.active, nav a:hover{
         left: -100%;
         text-align: center;
         transition: all .5s;
-        z-index: 1;
+        z-index: 99;
     }
 
     nav ul li{
@@ -115,6 +119,7 @@ nav a.active, nav a:hover{
 /* banner */
 .banner img{
     width: 100%;
+    padding-top: 96px;
 }
 
 /* quotations */
@@ -397,8 +402,7 @@ nav a.active, nav a:hover{
     }
 }
 
-
-
+/* var-1 */
 .row.var-1{
     background-color: #F5F5F5;
 }
@@ -444,6 +448,59 @@ nav a.active, nav a:hover{
     .row.var-1 img{
         width: 100%;
         height: auto;
+    }
+
+    .row.var-1 .description .img { display: table-header-group; } /*image always on top*/
+    .row.var-1 .description .paragraph { display: table-footer-group; } /*paragraph always on bottom*/
+}
+
+/* var-2 (upcoming events) */
+.row.var-2 .description{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.row.var-2 img{
+    width: 400px;
+    margin: auto;
+}
+
+.row.var-2 .description .paragraph {
+    color: #555555;
+    margin: auto;
+    padding-left: 50px;
+    padding-bottom: 0;
+}
+
+.row.var-2 .paragraph .text h2, .row.var-2 .paragraph .text p{
+    text-align: left;
+}
+
+.row.var-2 .paragraph .text{
+    padding-top: 10px;
+}
+
+.row.var-2 .paragraph .text button.btn.var-1{
+    margin: 0%;
+}
+
+@media screen and (max-width: 1024px){
+    .row.var-2 .description{
+        flex-direction: column;
+        display: table;
+        align-items: center;
+    }
+
+    .row.var-2 .description img{
+        display: block;
+        margin: auto;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .row.var-2 .description .paragraph{
+        padding-left: 0;
     }
 
     .row.var-1 .description .img { display: table-header-group; } /*image always on top*/
@@ -670,11 +727,6 @@ nav a.active, nav a:hover{
 
 .row .paragraph h2{
     line-height: 10px;
-}
-
-.row.upcoming-events p{
-    text-align: center;
-    color: #555555;
 }
 
 /* resources */
